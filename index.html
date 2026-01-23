@@ -1,2 +1,85 @@
-<p>This is my first git</p>
-<p>ram ram</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Responsive Starter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="script" href="script.js" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">MySite</a>
+
+        <button
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <!-- simple hamburger icon -->
+          <span class="bar"></span><span class="bar"></span
+          ><span class="bar"></span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Responsive design made simple</h1>
+          <p>
+            Mobile-first layout using Flexbox and Grid, responsive images and
+            accessible navigation.
+          </p>
+          <a class="cta" href="#">Get Started</a>
+        </div>
+      </section>
+
+      <section class="features container">
+        <article class="card">
+          <h2>Fast</h2>
+          <p>Performance minded layout and images.</p>
+        </article>
+        <article class="card">
+          <h2>Flexible</h2>
+          <p>Fluid grids with CSS Grid and Flexbox.</p>
+        </article>
+        <article class="card">
+          <h2>Accessible</h2>
+          <p>Semantic HTML and ARIA where required.</p>
+        </article>
+      </section>
+
+      <section class="image container">
+        <!-- responsive image with srcset -->
+        <picture>
+          <source
+            srcset="images/hero-large.jpg 1200w, images/hero-medium.jpg 800w"
+            sizes="(min-width: 900px) 900px, 100vw"
+          />
+          <img src="images/hero-medium.jpg" alt="Example hero" loading="lazy" />
+        </picture>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 MySite. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
